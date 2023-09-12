@@ -64,7 +64,6 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
     st.set_page_config(page_title="AI Scout - File Chat Demo",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
