@@ -66,9 +66,12 @@ def handle_userinput(user_question):
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Chat with multiple PDFs",
+    st.set_page_config(page_title="AI Scout - File Chat Demo",
                        page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
+
+    st.sidebar.subheader('About')
+    st.sidebar.caption('Created by Tony at AI Scout Solutions.')
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
